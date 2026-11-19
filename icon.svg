@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1f7a63" />
+  <rect x="44" y="44" width="424" height="424" rx="84" fill="none" stroke="#e3f1ec" stroke-opacity="0.28" stroke-width="10" />
+  <circle cx="388" cy="124" r="34" fill="#d96b43" />
+  <text x="256" y="328" text-anchor="middle" font-family="serif" font-weight="700" font-size="250" fill="#faf9f7">文</text>
+</svg>

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #faf9f7;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f3f0eb;
+    --ink-primary: #1c2421;
+    --ink-muted: #616b66;
+    --accent-jade: #1f7a63;
+    --accent-jade-soft: #e3f1ec;
+    --accent-terra: #d96b43;
+    --accent-terra-soft: #fbece6;
+    --border-hairline: #e6e2da;
+  }
+
+  html,
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  .font-zh {
+    font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", "Noto Sans CJK SC", serif;
+  }
+
+  .font-mono-num {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* 3D Flashcard Flip Utilities */
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Safe mobile bottom spacing */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
