@@ -1,0 +1,6 @@
+{
+  "name": "Boya Chinese 3.0 Studio",
+  "description": "Ứng dụng học từ vựng tiếng Trung Boya 3.0 với Flashcard SRS, luyện tập đa dạng, thi thử HSK, tập viết nét HanziWriter và trợ lý AI Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
